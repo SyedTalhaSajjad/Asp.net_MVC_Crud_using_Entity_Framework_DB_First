@@ -15,16 +15,13 @@ namespace Asp.net_MVC_Crud_using_Entity_Framework_DB_First.Controllers
         mvcdb1Entities1 dbobj = new mvcdb1Entities1();
         public ActionResult Student(tbl_Student obj)
         {
-         
-                return View(obj);
-            
-            
+                return View(obj);      
         }
 
         [HttpPost]
         public ActionResult AddStudent(tbl_Student model)
         {
-            //receiver
+            //receiver from view 
             if (ModelState.IsValid)
             {
                 tbl_Student obj = new tbl_Student();
